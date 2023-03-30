@@ -1,4 +1,4 @@
-#include "massstoragedevicememory.h"
+#include "devmem.h"
 #include "inputfilesize.h"
 #include <cmath>
 using namespace std;

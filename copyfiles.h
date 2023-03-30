@@ -1,4 +1,4 @@
-#include "massstoragedevicememory.h"
+#include "devmem.h"
 #include "user.h"
 #include "inputfilesize.h"
 #include <string>

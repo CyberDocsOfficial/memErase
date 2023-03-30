@@ -5,6 +5,9 @@
 #include "copyfiles.h"
 #include "devicelist.h"
 #include "usage.h"
+#include "fillzero.h"
+#include "fillone.h"
+#include "fillrandom.h"
 
 using namespace std;
 
@@ -22,20 +25,16 @@ int main(int argc, char ** argv){
 			system(cmd.c_str());
 		}
 		else if (str == "-i"){
-			//string value_i = *(argv + i);
 			numberOfIteration = stoi(*((argv + i) + 1));
 		}
 		else if(str == "-o"){
-			//fill sectors with 0 (Safe, Quick)
-			//fillZero();
+			fillZero();
 		}
 		else if (str == "-l"){
-			//fill sectors with 1 (Safe, Quick)
-			//fillOne();
+			fillOne();
 		}
 		else if (str == "-r"){
-			//fill sector with random (Safe, Take Time)
-			//fillRandom();
+			fillRandom();
 		}
 		else {
 			cout << "Oohh... Please enter a valid input." << endl;
@@ -61,7 +60,7 @@ int main(int argc, char ** argv){
 		}
 	}
 	else {
-		cout << "Memerase terminated!..." << endl;
+		cout << "memErase terminated!..." << endl;
 	}
 return 0;
 }
